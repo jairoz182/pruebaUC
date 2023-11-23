@@ -1,0 +1,192 @@
+body {
+    font-family: 'Bauhaus 93', Arial, sans-serif; /* Uso de la fuente Bauhaus 93 desde Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: font-size 0.3s; /* Transición suave para el cambio de tamaño */
+}
+
+nav a:hover {
+    font-size: 20px; /* Tamaño más grande cuando el mouse está sobre el enlace */
+    background-color: transparent; /* Asegurar que no haya fondo gris */
+}
+
+section {
+    padding: 20px;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proyecto {
+    width: 48%; /* Ajusta el ancho según sea necesario */
+    margin-bottom: 20px;
+}
+
+.proyecto img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.cerrar {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.contenido-modal {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+body {
+    font-family: 'Bauhaus 93', sans-serif;
+    /* Agrega cualquier otro estilo de cuerpo que desees */
+}
+
+/* Estilos para la tabla de experiencia */
+#experiencia table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#experiencia th, #experiencia td {
+    border: 1px solid #fff; /* Líneas de borde blancas */
+    padding: 8px;
+    text-align: left;
+}
+
+#experiencia th {
+    background-color: #666; /* Fondo gris para el encabezado */
+    color: white;
+}
+
+#experiencia tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila gris para las filas pares */
+    color: black; /* Color de texto negro para las filas gris */
+}
+
+#estudios tbody tr:nth-child(odd) {
+    background-color: #000; /* Fila negra para las filas impares */
+    color: white; /* Color de texto blanco para las filas negras */
+}
+/* Estilos para la tabla de estudios*/
+#estudios table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+ font-family: Arial, sans-serif;
+}
+#eestudios th, #estudios td {
+    border: 1px solid #fff; /* Líneas de borde blancas */
+    padding: 8px;
+    text-align: left;
+}
+
+#estudios th {
+    background-color: #666; /* Fondo gris para el encabezado */
+    color: white;
+}
+
+#estudios tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila gris para las filas pares */
+    color: black; /* Color de texto negro para las filas gris */
+}
+
+#estudios tbody tr:nth-child(odd) {
+    background-color: #000; /* Fila negra para las filas impares */
+    color: white; /* Color de texto blanco para las filas negras */
+}
+
+/* Estilos para el contenedor de videos */
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 48%; /* Ajusta el ancho según sea necesario */
+    box-sizing: border-box;
+}
+
+/* Estilos para Redes Sociales y Descarga de Hoja de Vida */
+.redes-sociales, .descarga-hoja-de-vida {
+    margin-top: 20px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales li {
+    margin-bottom: 10px;
+}
+
+.descarga-hoja-de-vida a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color de fondo azul (puedes cambiarlo) */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.descarga-hoja-de-vida a:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón sobre el enlace */
+}

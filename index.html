@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Hoja de Vida</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para el modal y la galería de imágenes */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 10% auto;
+            padding: 20px;
+            width: 80%;
+            background-color: #fefefe;
+            border: 1px solid #888;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .galeria-imagenes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .galeria-imagenes img {
+            width: 48%; /* Ajusta el tamaño de las imágenes según sea necesario */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página con el menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#medios">Medios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <!-- ... (otros elementos del menú) ... -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- TITULO DE PAGINA-->
+    <h1>JAIRO ALFONSO RODRIGUEZ ZABALA</h1>
+    
+        <!-- Sección de Proyectos con imágenes en dos columnas -->
+    
+	<section id="proyectos">
+        <h2>PROYECTOS</h2>
+
+        <div class="proyectos-container">
+            <!-- Proyecto 1 -->
+            <div class="proyecto" onclick="abrirGaleria(['5x10_1.png', '5x10_2.png', '5x10_3.png', '5x10_4.png'])">
+                <img src="5x10_1.png" alt="Proyecto 1">
+                <h3>CASA 5X10<h3>
+		<p>area 95 m cuadrados</p>
+		<p>Bogota</p>
+		<p>Año 2023</p>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="proyecto" onclick="abrirGaleria(['6x15_1.png', '6x15_2.png', '6x15_3.png', '6x15_4.png'])">
+                <img src="6x15_2.png" alt="Proyecto 2">
+                <h3>CASA 6X15<h3>
+		<h4>area 160 m cuadrados<h4>
+		<p>Bogota</p>
+		<p>Año 2022</p>
+            </div>
+  	    <!-- Proyecto 3 -->
+            <div class="proyecto" onclick="abrirGaleria(['3x8_1.png', '3x8_2.png', '3x8_3.png', '3x8_4.png'])">
+                <img src="3x8_1.png" alt="Proyecto 3">
+                <h3>APARTAMENTO 3X8<h3>
+		<h4>area 24 m cuadrados<h4>
+		<p>Bogota</p>
+		<p>Año 2020</p>
+            </div>
+	    <!-- Proyecto 4 -->
+            <div class="proyecto" onclick="abrirGaleria(['8x17_1.png', '8x17_2.png', '8x17_3.png', '8x17_4.png'])">
+                <img src="8x17_1.png" alt="Proyecto 2">
+                <h3>CASA 8X17<h3>
+		<h4>area 251 m cuadrados<h4>
+		<p>Medellin</p>
+		<p>Año 2020</p>
+            </div>
+
+    
+
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia -->
+    <section id="experiencia">
+    <h2>Experiencia</h2>
+        <img src="render1.jpg" alt="Experiencia" />
+       <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Cargo</th>
+                        <th>Empresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+ 		     <tr>
+                        <td>2023</td>
+                        <td>practicante de tec en software</td>
+			<td>Moto Shop DC LTDA</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>arquitecto renderista</td>
+			<td>independiente</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>auxiliar de almacen</td>
+			<td>Moto Shop DC LTDA</td>
+                    </tr>
+                    <tr>
+                        <td>2018-2020</td>
+                        <td>Arquitecto independiente</td>
+			<td>n/a</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Auxiliar cartografia</td>
+			<td>DANE</td>
+                    </tr>
+                    <!-- Puedes agregar más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!-- Sección de Estudios -->
+    <section id="estudios">
+    <h2>Estudios</h2>
+    <img src="unal.png" alt="Estudios" /> 
+<h3>experiencia academica</h3>
+     <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Carrera</th>
+                        <th>Universidad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>Ingenieria de software</td>
+			<td>Fundacion Universitaria Compensar</td>
+                        <td>en curso</td>
+                    </tr>
+                    <tr>
+                        <td>2017-2019</td>
+                        <td>Maestria en Diseño Urbano</td>
+                        <td>Universidad Nacional</td>
+			<td>Incompleta</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2017</td>
+                        <td>Arquitectura</td>
+			<td>Universidad Nacional</td>
+			<td>completa</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td>ingenieria catastral</td>
+			<td>Universidad Distrital</td>
+			<td>incompleta</td>
+                    </tr>
+                    
+                </tbody>
+            </table>  
+    </section>
+
+<!-- Sección de Medios -->
+<section id="medios">
+<h2>medios</h2>
+<h3>videos</h3>
+    <div class="container">
+        <!-- Otros elementos de la sección de Medios ... -->
+
+        <!-- Contenedor para los videos -->
+        <div class="video-container">
+            <!-- Primer video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IP1ukgCRShc" frameborder="0" allowfullscreen></iframe>
+
+            <!-- Segundo video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wf3QgJShmvo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de contacto-->
+<section id="contacto">
+<h2>CONTACTO</h2>
+<div class="descarga-hoja-de-vida">
+            <h3>Descargar Hoja de Vida</h3>
+            <p>Descarga mi hoja de vida en formato PDF:</p>
+            <a href="F:\Ucompensar\semestre 4\lenguajes internet\transferencia\HV.PDF" download="HV.pdf">Descargar PDF</a>
+         </div>
+    </div>
+    <div class="container">
+    
+        <!-- Redes socialesy descargar hoja de vida -->
+        <div class="redes-sociales">
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/jairoz182" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/jairoz182" target="_blank">Facebook</a></li>
+                <li><a href="https://www.youtube.com/UCPEZR1guVbJGwg41dpiMcrA" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+
+</section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="galeria" class="galeria-imagenes"></div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function abrirGaleria(imagenes) {
+            var modal = document.getElementById('myModal');
+            var galeria = document.getElementById('galeria');
+
+            // Limpiar galería existente
+            galeria.innerHTML = '';
+
+            // Agregar nuevas imágenes a la galería
+            for (var i = 0; i < imagenes.length; i++) {
+                var img = document.createElement('img');
+                img.src = imagenes[i];
+                img.alt = 'Imagen ' + (i + 1);
+                galeria.appendChild(img);
+            }
+
+            // Mostrar el modal
+            modal.style.display = 'block';
+        }
+
+        function cerrarModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Cerrar el modal si el usuario hace clic fuera de él
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
